@@ -1,9 +1,9 @@
-package com.ubs.exercise.springbootpreferenceservice.components;
+package com.efdouk.springbootpreferenceservice.components;
 
-import com.ubs.exercise.springbootpreferenceservice.domain.Preference;
-import com.ubs.exercise.springbootpreferenceservice.domain.PreferenceId;
-import com.ubs.exercise.springbootpreferenceservice.shared.ModelMapper;
-import com.ubs.exercise.springbootpreferenceservice.shared.PreferenceDTO;
+import com.efdouk.springbootpreferenceservice.domain.Preference;
+import com.efdouk.springbootpreferenceservice.domain.PreferenceId;
+import com.efdouk.springbootpreferenceservice.shared.ModelMapper;
+import com.efdouk.springbootpreferenceservice.shared.PreferenceDTO;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
@@ -34,12 +34,12 @@ public class PreferenceServiceImplTest {
         mockPreference = new Preference();
         mockPreference.setId(new PreferenceId());
         mockPreferenceDTO = new PreferenceDTO();
+        given(preferenceDTOMapper.mapDtoToEntity(any(PreferenceDTO.class))).willReturn(mockPreference);
     }
 
     @Test
     public void addNewPreference_shouldNotAddPreferenceWithExistingId() {
         // given
-        given(preferenceDTOMapper.mapDtoToEntity(any(PreferenceDTO.class))).willReturn(mockPreference);
         given(preferenceRepository.existsById(any(PreferenceId.class))).willReturn(true);
 
         // when
@@ -52,7 +52,6 @@ public class PreferenceServiceImplTest {
     @Test
     public void addNewPreference_shouldAddPreferenceWithNonExistingId() {
         // given
-        given(preferenceDTOMapper.mapDtoToEntity(any(PreferenceDTO.class))).willReturn(mockPreference);
         given(preferenceRepository.existsById(any(PreferenceId.class))).willReturn(false);
 
         // when

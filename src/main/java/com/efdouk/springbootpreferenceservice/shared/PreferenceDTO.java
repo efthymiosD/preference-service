@@ -1,5 +1,6 @@
-package com.ubs.exercise.springbootpreferenceservice.shared;
+package com.efdouk.springbootpreferenceservice.shared;
 
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Positive;
 import javax.validation.constraints.Size;
@@ -9,6 +10,8 @@ import java.util.StringJoiner;
 
 /**
  * Preference DTO object encapsulates the request body and implements bean validation
+ *
+ * @author Efthymios Doukas
  */
 public class PreferenceDTO implements Serializable {
 
@@ -18,7 +21,7 @@ public class PreferenceDTO implements Serializable {
     @NotNull(message = "Client id must be provided.")
     @Positive
     private Long clientId;
-    @NotNull(message = "Property name must be provided.")
+    @NotBlank(message = "Property name must be provided.")
     @Size(min = 3, message = "Property name should be 3 characters long at least.")
     private String propertyName;
 

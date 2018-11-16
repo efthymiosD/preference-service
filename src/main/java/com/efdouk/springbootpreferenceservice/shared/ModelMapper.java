@@ -1,4 +1,4 @@
-package com.ubs.exercise.springbootpreferenceservice.shared;
+package com.efdouk.springbootpreferenceservice.shared;
 
 /**
  * A generic model mapper interface.

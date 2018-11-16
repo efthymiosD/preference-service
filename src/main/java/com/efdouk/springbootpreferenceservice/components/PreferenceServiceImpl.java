@@ -1,8 +1,8 @@
-package com.ubs.exercise.springbootpreferenceservice.components;
+package com.efdouk.springbootpreferenceservice.components;
 
-import com.ubs.exercise.springbootpreferenceservice.domain.Preference;
-import com.ubs.exercise.springbootpreferenceservice.shared.ModelMapper;
-import com.ubs.exercise.springbootpreferenceservice.shared.PreferenceDTO;
+import com.efdouk.springbootpreferenceservice.domain.Preference;
+import com.efdouk.springbootpreferenceservice.shared.ModelMapper;
+import com.efdouk.springbootpreferenceservice.shared.PreferenceDTO;
 import org.springframework.stereotype.Service;
 
 @Service

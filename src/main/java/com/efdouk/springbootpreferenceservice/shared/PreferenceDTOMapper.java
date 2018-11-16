@@ -1,7 +1,7 @@
-package com.ubs.exercise.springbootpreferenceservice.shared;
+package com.efdouk.springbootpreferenceservice.shared;
 
-import com.ubs.exercise.springbootpreferenceservice.domain.Preference;
-import com.ubs.exercise.springbootpreferenceservice.domain.PreferenceId;
+import com.efdouk.springbootpreferenceservice.domain.Preference;
+import com.efdouk.springbootpreferenceservice.domain.PreferenceId;
 import org.springframework.stereotype.Component;
 
 @Component

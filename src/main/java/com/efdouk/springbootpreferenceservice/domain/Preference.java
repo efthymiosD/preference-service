@@ -1,4 +1,4 @@
-package com.ubs.exercise.springbootpreferenceservice.domain;
+package com.efdouk.springbootpreferenceservice.domain;
 
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;

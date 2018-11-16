@@ -1,6 +1,6 @@
-package com.ubs.exercise.springbootpreferenceservice.shared;
+package com.efdouk.springbootpreferenceservice.shared;
 
-import com.ubs.exercise.springbootpreferenceservice.domain.Preference;
+import com.efdouk.springbootpreferenceservice.domain.Preference;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

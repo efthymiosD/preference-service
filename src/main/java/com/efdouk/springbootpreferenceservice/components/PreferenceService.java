@@ -1,6 +1,6 @@
-package com.ubs.exercise.springbootpreferenceservice.components;
+package com.efdouk.springbootpreferenceservice.components;
 
-import com.ubs.exercise.springbootpreferenceservice.shared.PreferenceDTO;
+import com.efdouk.springbootpreferenceservice.shared.PreferenceDTO;
 
 /**
  * @author Efthymios Doukas
