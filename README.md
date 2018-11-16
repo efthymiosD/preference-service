@@ -2,7 +2,7 @@
 
 The task:
 
-·  Create a Restful service named Preference Service which will connect to the database in order to persist for a given
+·  Create a Restful service named Preference Service which will connect to the database in order to persist a given
  user property name e.g. "show_one_time_confirmation_page".
 
 ·  Preference Service API should take 3 attributes as an input: ClientID, ApplicationID, PropertyName.
